@@ -7,8 +7,8 @@
 ```python
 ```
 ```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
+curl "https://api.loadimpact.com/v3/user-scenarios/67"
+  -H "Authorization: Token Your-API-Token-Here"
 ```
 
 ```json
