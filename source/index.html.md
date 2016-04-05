@@ -11,6 +11,7 @@ toc_footers:
 
 includes:
   - user-scenarios
+  - user-scenario-validations
 
 search: true
 ---
