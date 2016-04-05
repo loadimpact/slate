@@ -88,3 +88,49 @@ TODO
 `GET /organizations HTTP/1.1`  
 `Content-Type: application/json`  
 `Authorization: Token <YourAuthorizationToken>`
+
+## Read
+
+```shell
+curl "https://api.loadimpact.com/v3/organizations/117" \
+  -H "Authorization: Token <YourAuthorizationToken>"
+```
+
+```python
+TODO
+```
+
+```java
+TODO
+```
+
+```json
+{
+  "organization": {
+      "id": 117,
+      "name": "org-2",
+      "description": "",
+      "subscription_ids": [],
+      "load_zone_ids": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 19, 20, 22, 23, 25, 26, 27, 28, 29, 30],
+      "is_personal": false,
+      "owner_id": 95,
+      "billing_address": "",
+      "billing_country": "US",
+      "billing_email": "",
+      "vat_number": "",
+      "credits": 0,
+      "created": "2016-03-04T11:25:22.795975",
+      "updated": "2016-03-04T11:25:22.796000",
+      "can_get_data_retention": false
+  }
+}
+```
+
+`GET /organizations/<ID> HTTP/1.1`  
+`Content-Type: application/json`  
+`Authorization: Token <YourAuthorizationToken>`
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the organization to retrieve
+
