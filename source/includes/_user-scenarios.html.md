@@ -18,7 +18,7 @@ belongs_to_user | TODO
 created | User scenario creation datetime
 updated | User scenario last update datetime
 
-Read more about [User Sceanarios](http://support.loadimpact.com/knowledgebase/topics/118845-user-scenario) in LoadImpact knoledge base.
+Read more about [User Scenarios](http://support.loadimpact.com/knowledgebase/topics/118845-user-scenario) in LoadImpact knoledge base.
 
 ## Index by project
 
