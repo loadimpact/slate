@@ -13,10 +13,14 @@ toc_footers:
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - intro
   - organizations
   - projects
   - user-scenarios
   - user-scenario-validations
+  - data-stores
+  - auth
+  - errors
 
 search: true
 ---

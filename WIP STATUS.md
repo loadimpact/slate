@@ -60,3 +60,15 @@ Create  | [ ]  | [ ]    | [ ]  | [ ] | [j]    | [j]  | [ ]
 Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 Delete  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 
+## Intro
+[ ] Introduction and general conventions
+
+## Errors
+[+] Error codes and descriptions  
+[ ] Error object
+
+## Auth
+[ ] Link to Knowledge Base
+[ ] Describe Loadimpact-cli ways
+
+
