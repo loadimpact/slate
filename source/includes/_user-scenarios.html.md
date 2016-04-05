@@ -94,6 +94,8 @@ curl "https://api.staging.loadimpact.com/v3/user-scenarios" \
   -d 'project_id=99' \
   -d 'name=New User Scenario 2' \
   -d 'script=script'
+
+loadimpact user-scenario create 'script name' /path/to/script.lua --project_id=1
 ```
 
 ```python
@@ -144,7 +146,7 @@ data_store_counter | TODO
 curl "https://api.loadimpact.com/v3/user-scenarios/67" \
   -H "Authorization: Token <YourAuthorizationToken>"  
 
-loadimpact user-scenario list
+loadimpact user-scenario get 67
 ```
 
 ```python
@@ -191,7 +193,7 @@ curl "https://api.loadimpact.com/v3/user-scenarios/67" \
   -XPATCH \
   -d 'name=New User Scenario 1'
 
-loadimpact user-scenario list
+loadimpact user-scenario update 67 /path/to/script.lua
 ```
 
 ```python
@@ -257,6 +259,8 @@ belongs_to_user | TODO
 curl "https://api.loadimpact.com/v3/user-scenarios/67" \
   -H "Authorization: Token <YourAuthorizationToken>" \
   -XDELETE
+
+loadimpact user-scenario delete 67
 ```
 
 ```python
