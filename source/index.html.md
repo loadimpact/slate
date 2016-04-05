@@ -11,6 +11,7 @@ toc_footers:
 
 includes:
   - organizations
+  - projects
   - user-scenarios
   - user-scenario-validations
 
