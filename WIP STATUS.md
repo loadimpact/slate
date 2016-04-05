@@ -24,3 +24,13 @@ Actions | HTTP | Params | Curl | Cli | Python | Java | Json
 Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 Create  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
+
+## User Organizations
+
+[+] Description
+[+] Attributes
+[+] Knowledge base link
+
+Actions | HTTP | Params | Curl | Cli | Python | Java | Json
+------- | ---- | ------ | ---- | --- | ------ | ---- | ----
+Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
