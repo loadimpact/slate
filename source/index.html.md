@@ -4,7 +4,6 @@ title: LI API v3 Public Reference
 language_tabs:
   - shell
   - python
-  - java
 
 toc_footers:
   - <a href='https://loadimpact.com/'>Load Impact Website</a>

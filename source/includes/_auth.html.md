@@ -6,10 +6,9 @@ curl "api_endpoint_here"
   -H "Authorization: <YourAuthorizationToken>"
 ```
 
-```ruby
-```
 
 ```python
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
 ```
 
 Load Impact expects for the API key to be included in all API requests to the server in a header that looks like the following:

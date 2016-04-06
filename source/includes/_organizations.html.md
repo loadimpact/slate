@@ -4,18 +4,18 @@ Organization is a context for managing members, projects - which includes tests,
 
 Property | Description
 ---------| -----------
-id | 
+id | Organization id
 name | Organization name
 description | Organization descrition
 subscription_ids | Related subscription IDs as an array
 load_zone_ids | Related load zones IDs as an array
 is_personal | TODO
-owner_id | TODO
-billing_address | TODO
-billing_country | TODO
-billing_email | TODO
+owner_id | Id of the user that is the owner of the organization
+billing_address | Billing adress of the organization
+billing_country | Billing country of the organization
+billing_email | Billing email of the organization
 vat_number | TODO
-credits | TODO
+credits | Number of credits for the organization
 can_get_data_retention | TODO
 created | Organization creation datetime
 updated | Organization last update datetime
@@ -25,18 +25,22 @@ Read more about [Organizations](http://support.loadimpact.com/knowledgebase/arti
 ## Index
 
 ```shell
+
+### curl
 curl "https://api.loadimpact.com/v3/organizations" \
   -H "Authorization: Token <YourAuthorizationToken>"
 
+### Using the loadimpact cli
 loadimpact organization list
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+
+client.list_organizations()
 ```
 
 ```json
@@ -97,11 +101,7 @@ curl "https://api.loadimpact.com/v3/organizations/117" \
 ```
 
 ```python
-TODO
-```
-
-```java
-TODO
+This feature is not implemented for the python SDK
 ```
 
 ```json

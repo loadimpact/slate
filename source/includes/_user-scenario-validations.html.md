@@ -21,11 +21,7 @@ curl "https://api.loadimpact.com/v3/user-scenarios/67/validations \"
 ```
 
 ```python
-TODO
-```
-
-```java
-TODO
+This feature is not available in the Python SDK
 ```
 
 ```json
@@ -78,11 +74,14 @@ loadimpact user-scenario validate 67
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+scenario_id = 1
+
+client.get_user_scenario(scenario_id)
+validation = user_scenario.validate()
 ```
 
 ```json
@@ -115,11 +114,11 @@ curl "https://api.loadimpact.com/v3/validations/166" \
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+validation_id = 1
 
-```java
-TODO
+validation = client.get_user_scenario_validation(validation_id)
 ```
 
 ```json

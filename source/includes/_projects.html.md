@@ -27,11 +27,13 @@ loadimpact organization projects 117
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+organization_id = 1
+
+client.list_organization_projects(organization_id)
 ```
 
 ```json
@@ -85,11 +87,7 @@ curl "https://api.loadimpact.com/v3/projects/152" \
 ```
 
 ```python
-TODO
-```
-
-```java
-TODO
+This is not availble through the python SDK
 ```
 
 ```json

@@ -4,7 +4,7 @@
 
 Error Code | Meaning
 ---------- | -------
-400 | Bad Request -- Your request sucks
+400 | Bad Request -- Your request is not valid
 401 | Unauthorized -- Your API key is wrong
 403 | Forbidden -- The resourse requested is protected and you don't have required permissions
 404 | Not Found -- The specified resourse could not be found

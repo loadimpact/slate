@@ -4,13 +4,13 @@
 [j] Attributes
 [+] Knowledge base link
 
-Actions | HTTP | Params | Curl | Cli | Python | Java | Json
-------- | ---- | ------ | ---- | --- | ------ | ---- | ----
-Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Create  | [+]  | [j]    | [+]  | [+] | [j]    | [j]  | [+]
-Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Update  | [+]  | [j]    | [+]  | [+] | [j]    | [j]  | [+]
-Delete  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
+Actions | HTTP | Params | Curl | Cli | Python | Json
+------- | ---- | ------ | ---- | --- | ------ | ----
+Index   | [+]  | [+]    | [+]  | [+] | [+]    | [+]
+Create  | [+]  | [j]    | [+]  | [+] | [+]    | [+]
+Read    | [+]  | [+]    | [+]  | [+] | [+]    | [+]
+Update  | [+]  | [j]    | [+]  | [+] | [+]    | [+]
+Delete  | [+]  | [+]    | [+]  | [+] | [+]    | [+]
 
 
 ## User Scenario Validations
@@ -19,10 +19,10 @@ Delete  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 [+] Attributes
 [+] Knowledge base link
 
-Actions | HTTP | Params | Curl | Cli | Python | Java | Json
-------- | ---- | ------ | ---- | --- | ------ | ---- | ----
-Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Create  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
+Actions | HTTP | Params | Curl | Cli | Python | Json
+------- | ---- | ------ | ---- | --- | ------ | ----
+Index   | [+]  | [+]    | [+]  | [+] | [+]    | [+]
+Create  | [+]  | [+]    | [+]  | [+] | [+]    | [+]
 
 
 ## Organizations
@@ -31,10 +31,10 @@ Create  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 [j] Attributes
 [+] Knowledge base link
 
-Actions | HTTP | Params | Curl | Cli | Python | Java | Json
-------- | ---- | ------ | ---- | --- | ------ | ---- | ----
-Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
+Actions | HTTP | Params | Curl | Cli | Python | Json
+------- | ---- | ------ | ---- | --- | ------ | ----
+Index   | [+]  | [+]    | [+]  | [+] | [+]    | [+]
+Read    | [+]  | [+]    | [+]  | [+] | [+]    | [+]
 
 ## Projects
 
@@ -42,10 +42,10 @@ Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 [j] Attributes
 [+] Knowledge base link
 
-Actions | HTTP | Params | Curl | Cli | Python | Java | Json
-------- | ---- | ------ | ---- | --- | ------ | ---- | ----
-Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
+Actions | HTTP | Params | Curl | Cli | Python | Json
+------- | ---- | ------ | ---- | --- | ------ | ----
+Index   | [+]  | [+]    | [+]  | [+] | [+]    | [+]
+Read    | [+]  | [+]    | [+]  | [+] | [+]    | [+]
 
 ## Data Stores
 
@@ -53,12 +53,12 @@ Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
 [j] Attributes
 [+] Knowledge base link
 
-Actions | HTTP | Params | Curl | Cli | Python | Java | Json
-------- | ---- | ------ | ---- | --- | ------ | ---- | ----
-Index   | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Create  | [ ]  | [ ]    | [ ]  | [ ] | [j]    | [j]  | [ ]
-Read    | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
-Delete  | [+]  | [+]    | [+]  | [+] | [j]    | [j]  | [+]
+Actions | HTTP | Params | Curl | Cli | Python | Json
+------- | ---- | ------ | ---- | --- | ------ | ----
+Index   | [+]  | [+]    | [+]  | [+] | [j]    | [+]
+Create  | [ ]  | [ ]    | [ ]  | [ ] | [j]    | [ ]
+Read    | [+]  | [+]    | [+]  | [+] | [j]    | [+]
+Delete  | [+]  | [+]    | [+]  | [+] | [j]    | [+]
 
 ## Intro
 [ ] Introduction and general conventions

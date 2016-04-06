@@ -23,18 +23,23 @@ Read more about [User Scenarios](http://support.loadimpact.com/knowledgebase/top
 ## Index by project
 
 ```shell
+### curl
 curl "https://api.loadimpact.com/v3/projects/99/user-scenarios \"
   -H "Authorization: Token <YourAuthorizationToken>"
 
+### Using the loadimpact cli
 loadimpact user-scenario list --project_id=99
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+project_id = 1
+
+client.list_user_scenarios(project_id)
+
 ```
 
 ```json
@@ -88,6 +93,7 @@ project_id | Related project ID
 ## Create
 
 ```shell
+### curl
 curl "https://api.staging.loadimpact.com/v3/user-scenarios" \
   -H "Authorization: Token <YourAuthorizationToken>" \
   -XPOST \
@@ -95,15 +101,28 @@ curl "https://api.staging.loadimpact.com/v3/user-scenarios" \
   -d 'name=New User Scenario 2' \
   -d 'script=script'
 
+### Using the loadimpact cli
 loadimpact user-scenario create 'script name' /path/to/script.lua --project_id=1
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+
+
+load_script = """
+local response = http.get("http://example.com')
+log.info("Load time: "..response.total_load_time.."s")
+client.sleep(5)
+"""
+user_scenario = client.create_user_scenario({
+    'name': "My user scenario",
+    'load_script': load_script,
+    'project_id': project_id
+})
+
 ```
 
 ```json
@@ -143,18 +162,22 @@ data_store_counter | TODO
 ## Read
 
 ```shell
+### curl
 curl "https://api.loadimpact.com/v3/user-scenarios/67" \
   -H "Authorization: Token <YourAuthorizationToken>"  
 
+### Using the loadimpact cli
 loadimpact user-scenario get 67
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+user_scenario_id = 1
+
+client.get_user_scenarios(user_scenario_id)
 ```
 
 ```json
@@ -188,20 +211,32 @@ ID | The ID of the user scenario to retrieve
 ## Update
 
 ```shell
+### curl
 curl "https://api.loadimpact.com/v3/user-scenarios/67" \
   -H "Authorization: Token <YourAuthorizationToken>" \
   -XPATCH \
   -d 'name=New User Scenario 1'
 
+### Using the loadimpact-cli
 loadimpact user-scenario update 67 /path/to/script.lua
 ```
 
 ```python
-TODO
-```
+The python SDK for the V3 API is still in BETA.
 
-```java
-TODO
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+scenario_id = 1
+
+load_script = """
+local response = http.get("http://example.com')
+log.info("Load time: "..response.total_load_time.."s")
+client.sleep(5)
+"""
+
+userscenario = client.get_user_scenario(scenario_id)
+userscenario.update({'script': load_script})
+
 ```
 
 ```json
@@ -256,20 +291,27 @@ belongs_to_user | TODO
 ## Delete
 
 ```shell
+### curl
 curl "https://api.loadimpact.com/v3/user-scenarios/67" \
   -H "Authorization: Token <YourAuthorizationToken>" \
   -XDELETE
 
+### Using the loadimpact-cli
 loadimpact user-scenario delete 67
 ```
 
 ```python
-TODO
+The python SDK for the V3 API is still in BETA.
+
+import loadimpact
+client = loadimpact.ApiTokenClient(api_token='YOUR_API_TOKEN_GOES_HERE')
+scenario_id = 1
+
+
+userscenario = client.get_user_scenario(scenario_id)
+userscenario.delete()
 ```
 
-```java
-TODO
-```
 
 `DELETE /user-scenarios/<ID>`  
 `Content-Type: application/json`  

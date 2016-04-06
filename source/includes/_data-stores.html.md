@@ -4,13 +4,13 @@ Data stores are used to parameterize data in load scripts. You create a data sto
 
 Property | Description
 ---------| -----------
-id | 
+id | Data store id
 project_id | Related project ID ('one-to-many' relation)  
 name | User scenario name
 status | TODO
 rows | TODO
 converted | TODO
-public_url | TODO
+public_url | The public url of the data store
 created | User scenario creation datetime
 updated | User scenario last update datetime
 
@@ -24,10 +24,6 @@ curl "https://api.loadimpact.com/v3/projects/99/data-stores" \
 ```
 
 ```python
-TODO
-```
-
-```java
 TODO
 ```
 
@@ -83,10 +79,6 @@ curl "https://api.loadimpact.com/v3/data-stores/26" \
 TODO
 ```
 
-```java
-TODO
-```
-
 ```json
 {
   "data_store": {
@@ -121,10 +113,6 @@ curl "https://api.loadimpact.com/v3/data-stores/67" \
 ```
 
 ```python
-TODO
-```
-
-```java
 TODO
 ```
 

@@ -11,7 +11,7 @@ script | User scenario script
 lines | TODO
 data_store_ids | Related data store IDs as an array
 data_store_counter | TODO
-last_validation_id | TODO
+last_validation_id | The id of the last validation of the user scenario
 last_validated | TODO
 last_validation_error | TODO
 belongs_to_user | TODO
@@ -30,10 +30,6 @@ loadimpact user-scenario list --project_id=99
 ```
 
 ```python
-TODO
-```
-
-```java
 TODO
 ```
 
@@ -100,10 +96,6 @@ curl "https://api.staging.loadimpact.com/v3/user-scenarios" \
 TODO
 ```
 
-```java
-TODO
-```
-
 ```json
 {
   "user_scenario": {
@@ -151,10 +143,6 @@ loadimpact user-scenario list
 TODO
 ```
 
-```java
-TODO
-```
-
 ```json
 {
   "user_scenario": {
@@ -195,10 +183,6 @@ loadimpact user-scenario list
 ```
 
 ```python
-TODO
-```
-
-```java
 TODO
 ```
 
@@ -260,10 +244,6 @@ curl "https://api.loadimpact.com/v3/user-scenarios/67" \
 ```
 
 ```python
-TODO
-```
-
-```java
 TODO
 ```
 
