@@ -4,12 +4,13 @@ We love pull requests. Here's a quick guide:
 
 1. Fork the repo.
 
-2. Commit your changes. Please use 'docs' commit prefix and mentioned resource name in it.
+2. Commit your changes. Please use 'docs' or 'fix' commit prefix and mentione resource name in it.
 If your pull request fixes an issue specify it in the commit message. Some examples:
 
   ```
   [docs] Update CONTRIBUTING.md for commit prefixes
   [user-scenarios/docs] add create spec
+  [user-scenarios/fix] fix name description
   ```
 
 3. Push to your fork and submit a pull request. Please provide us with some
